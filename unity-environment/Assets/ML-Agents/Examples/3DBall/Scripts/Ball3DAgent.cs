@@ -23,8 +23,9 @@ public class Ball3DAgent : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        //print(vectorAction[0]);
-  
+        print("0: " + vectorAction[0]);
+        print("1: " + vectorAction[1]);
+
         if (brain.brainParameters.vectorActionSpaceType == SpaceType.continuous)
         {
             float action_z = 2f * Mathf.Clamp(vectorAction[0], -1f, 1f);
